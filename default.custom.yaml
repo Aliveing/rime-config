@@ -10,19 +10,20 @@ patch:
   # - schema: emoji
   # - schema: pinyin_simp
   # 改 caps lock 大小写锁定键为 中/英 切换键
-  ascii_composer/good_old_caps_lock: false
-  ascii_composer/switch_key:
-    Caps_Lock: commit_code 
-    Shift_L: noop
-    Shift_R: noop 
-    Control_L: noop
-    Control_R: noop
+  ascii_composer:
+    good_old_caps_lock: false
+    switch_key:
+      Caps_Lock: noop 
+      Shift_L: noop
+      Shift_R: noop 
+      Control_L: noop
+      Control_R: noop
   key_binder/bindings:
   - {accept: "[", send: Page_Up, when: has_menu}
   - {accept: "]", send: Page_Down, when: has_menu}
-  - {accept: Escape, toggle: ascii_mode, when: always}
-  - {accept: Caps_Lock, toggle: ascii_mode, when: always}
-  - switcher:
-    - Control+Command+6
+  - {accept: Esc, toggle: ascii_mode, when: always}
+  switcher:
+    hotkeys:
+      Control+Command+6
     caption: []
 
