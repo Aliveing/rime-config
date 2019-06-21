@@ -1,15 +1,28 @@
 patch:
-  schema_list:
-  - schema: luna_pinyin_fluency
-  - schema: double_pinyin_abc
-  - schema: luna_pinyin_simp
-  - schema: cangjie5
-  - schema: luna_pinyin
-  - schema: emoji
-  - schema: pinyin_simp
-  switcher:
-    hotkeys:
-    - Control+grave
-    - F4
   menu:
     page_size: 9
+  schema_list:
+  # - schema: luna_pinyin_fluency
+  - schema: double_pinyin_abc
+  - schema: luna_pinyin_simp
+  # - schema: cangjie5
+  # - schema: luna_pinyin
+  # - schema: emoji
+  # - schema: pinyin_simp
+  # 改 caps lock 大小写锁定键为 中/英 切换键
+  ascii_composer/good_old_caps_lock: false
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code 
+    Shift_L: noop
+    Shift_R: noop 
+    Control_L: noop
+    Control_R: noop
+  key_binder/bindings:
+  - {accept: "[", send: Page_Up, when: has_menu}
+  - {accept: "]", send: Page_Down, when: has_menu}
+  - {accept: Escape, toggle: ascii_mode, when: always}
+  - {accept: Caps_Lock, toggle: ascii_mode, when: always}
+  - switcher:
+    - Control+6
+    caption: []
+

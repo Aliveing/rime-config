@@ -1,11 +1,10 @@
 patch:
-  switches/@0/reset: 1
-  us_keyboard_layout: false
-  app_options/com.microsoft.VSCode
-    ascii_mode: true
-  app_options/com.google.Chrome
-    ascii_mode: true
+  us_keyboard_layout: true
+  switches/@0/reset: 0
   style:
-    horizontal: true
-    font_face: STHeitiSC-Medium
     color_scheme: clean_white
+    border_height: 2
+    border_width: 2
+    font_face: STHeitiSC-Light
+    horizontal: true
+    corner_radius: 5
