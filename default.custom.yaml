@@ -23,6 +23,6 @@ patch:
   - {accept: Escape, toggle: ascii_mode, when: always}
   - {accept: Caps_Lock, toggle: ascii_mode, when: always}
   - switcher:
-    - Control+6
+    - Control+Command+6
     caption: []
 
