@@ -1,0 +1,15 @@
+patch:
+  schema_list:
+  - schema: luna_pinyin_fluency
+  - schema: double_pinyin_abc
+  - schema: luna_pinyin_simp
+  - schema: cangjie5
+  - schema: luna_pinyin
+  - schema: emoji
+  - schema: pinyin_simp
+  switcher:
+    hotkeys:
+    - Control+grave
+    - F4
+  menu:
+    page_size: 9
