@@ -16,7 +16,7 @@ patch:
       Caps_Lock: noop 
       Shift_L: noop
       Shift_R: noop 
-      Control_L: noop
+      Control_L: commit_code
       Control_R: noop
   key_binder/bindings:
   - {accept: "[", send: Page_Up, when: has_menu}
